@@ -4,58 +4,7 @@
 		<meta charset="utf8">
 		<title>domino</title>
 		<link rel="stylesheet" href="base.css">
-		<script language="JavaScript" type="text/old">
-			var LEFT_PIZZA  = 0;
-			var RIGHT_PIZZA = 1;
-
-			function OnLoad()
-			{
-    			document.documentElement.style.webkitTouchCallout = "none";
-    			document.documentElement.style.webkitUserSelect = "none";
-    			switchDisply(RIGHT_PIZZA);
-    			$changeDisplay
-    			location.hash = "rendered";
-				
-    			document.getElementById("photopizzaS1").addEventListener('touchstart', function (e)
-    			{
-        			switchDisply(LEFT_PIZZA);
-    			});
-
- 			   document.getElementById("photopizzaS2").addEventListener('touchstart', function (e)
-    			{
-        			switchDisply(RIGHT_PIZZA);
-    			});
-			}
-
-			function switchDisply(target)
-			{
-				var type = '';
-				switch (target)
-				{
-					case LEFT_PIZZA:
-						type = ' left';
-						closeRight();
-					break;
-					case RIGHT_PIZZA:
-						type = ' right';
-						closeLeft();
-					break;
-				}
-				document.getElementById("SelectPizza").className = 'select-pizza ' + type;
-			}
-
-			function closeLeft()
-			{
-				document.getElementById("LeftPizza").className = 'hide';
-				document.getElementById("RightPizza").className = '';
-			}
-
-			function closeRight()
-			{
-				document.getElementById("LeftPizza").className = '';
-				document.getElementById("RightPizza").className = 'hide';
-			}
-		</script>
+		<script src="main.js"></script>
 	</head>
 	<body onload="OnLoad()"/>
 		<div class="container">
