@@ -1,0 +1,9 @@
+{
+  "name": "dominosmiku-halfandhalf",
+  "version": "1.0.0",
+  "description": "The \"halfandhalf\" UI from Dominos App: Feat. Hatsune Miku.",
+  "license": "MIT",
+  "dependencies": {
+    "typescript": "^3.8.3"
+  }
+}
